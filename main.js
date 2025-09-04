@@ -10,3 +10,5 @@ let name = await ti.prompt("Hello, what is your name?");
 ti.output("Hello, " + name);
 ti.output("I am program")
 let likesbikes = await ti.promptYesOrNo("do you like bikes?")
+if (likesbikes){
+ti.output("good, you better");}
