@@ -31,6 +31,16 @@ if (name === "Avalynn" || name === "Ava"||name==="avalynn"||name==="ava") {
   }else{
     ti.output("WRONG, try again");
   }
-}ti.output("next queation");
+}ti.output("last queation");
+KeepRepeating = true;
+while (KeepRepeating){
+  let color = await ti.prompt("what color do you asssiate with Science?")
+  if (color=== "Green"|| color=== "green"){
+    ti.output("Correct!");
+    KeepRepeating= false
+  }else{
+    ti.output("WRONG, try again");
+  }
+}
 
 }
