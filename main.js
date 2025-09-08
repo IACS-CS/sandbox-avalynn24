@@ -23,10 +23,14 @@ if (name === "Avalynn" || name === "Ava"||name==="avalynn"||name==="ava") {
     }
   }ti.output("next queation");
   KeepRepeating = true;
-  if (KeepRepeating){
+  while (KeepRepeating){
   let color = await ti.prompt("what color do you assosiate with English?")
   if (color=== "Blue"|| color=== "blue"){
     ti.output("Correct!");
+    KeepRepeating= false
+  }else{
+    ti.output("WRONG, try again");
   }
-}
+}ti.output("next queation");
+
 }
